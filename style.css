@@ -67,14 +67,29 @@ body {
         max-width: 440px;
         margin-bottom: 50px;
     }
+    .container-main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .texto {
+        text-align: center;
+    }
     .container-second {
         display: grid;
     }
     .dados {
-        display: grid;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         margin-right: 50px;
         gap: 15px;
         text-align: center;
+    }
+    .foto {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
