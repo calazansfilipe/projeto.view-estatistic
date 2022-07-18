@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 body {
@@ -63,7 +63,7 @@ body {
 }
 @media (max-width: 1000px) {
     .container {
-        grid-template-columns: 1fr;
+        display: grid;
         max-width: 440px;
         padding: 10px;
     }
@@ -78,9 +78,6 @@ body {
     .texto {
         text-align: center;
     }
-    .container-second {
-        display: grid;
-    }
     .dados {
         display: flex;
         flex-direction: column;
@@ -88,7 +85,9 @@ body {
         gap: 15px;
         text-align: center;
     }
-    .foto {
+    .foto img {
+        display: flex;
+        flex-direction: column-reverse;
         margin-left: 10px;
         margin-right: 10px;
     }
