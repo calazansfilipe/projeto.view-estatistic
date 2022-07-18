@@ -85,9 +85,7 @@ body {
         gap: 15px;
         text-align: center;
     }
-    .foto img {
-        display: flex;
-        flex-direction: column-reverse;
+    .foto {
         margin-left: 10px;
         margin-right: 10px;
     }
