@@ -4,11 +4,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
 }
 
 body {
@@ -17,38 +17,41 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 140px;
+    padding: 50px 30px;
 }
 
-.container-main {
-    display: grid;
-    background-color: hsl(244, 38%, 16%);;
-    padding: 70px 50px;
-    border-top-left-radius: 8px;
+.principal {
+    background-color: hsl(244, 38%, 16%);
     border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.conteudo {
+    margin-top: 30px;
 }
 .titulo {
     font-weight: bolder;
-    font-size: 2.6rem;
-    max-width: 20ch;
+    font-size: 2rem;
+    max-width: 15ch;
+    margin-left: 30px;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .palavra {
     color: hsl(277, 64%, 61%);
 }
 .texto {
-    max-width: 35ch;
+    max-width: 25ch;
     font-family: 'Outfit', sans-serif;
     color: #9f9c9c;
     margin-top: 25px;
+    text-align: center;
+    margin-left: 25px;
+    font-size: 1.2rem;
 }
-.dados {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 150px;
+.container-dados {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 .sub-dados {
     color: #9f9c9c;
@@ -58,35 +61,14 @@ body {
 .foto img {
     max-width: 100%;
     display: block;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-@media (max-width: 1000px) {
-    .container {
-        display: grid;
-        max-width: 440px;
-        padding: 10px;
+@media (min-width: 1000px) {
+    .principal {
+        margin: 0 auto;
     }
-    .container-main {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .titulo {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    .texto {
-        text-align: center;
-    }
-    .dados {
-        display: flex;
-        flex-direction: column;
-        margin-right: 50px;
-        gap: 15px;
-        text-align: center;
-    }
-    .foto {
-        margin-left: 10px;
-        margin-right: 10px;
+    .conteudo {
+        margin-left: 150px;
     }
 }
