@@ -21,6 +21,7 @@ body {
 }
 
 .principal {
+    margin: 0 auto;
     background-color: hsl(244, 38%, 16%);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -70,5 +71,15 @@ body {
     }
     .conteudo {
         margin-left: 150px;
+    }
+}
+@media (max-width: 850px) {
+    .conteudo {
+       margin-left: 150px;
+    }
+}
+@media (max-width: 500px) {
+    .conteudo {
+        margin: 30px auto;
     }
 }
